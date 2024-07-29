@@ -214,7 +214,7 @@ loop {
 <p>The update method uses pattern matching to find the appropriate branch to execute (which is much faster than dynamic dispatch), and the programmer can then update the model while running any application logic necessary. Once the update method has completed, the next iteration of the loop begins.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="the-application-trait"><a class="header" href="#the-application-trait">The Application Trait</a></h1>
 <blockquote>
-<p>Before beginning, I would recommend cloning the <a href="https://github.com/edfloreshz/cosmic-app-template">COSMIC App Template</a> to experiment with while reading the documentation below.</p>
+<p>Before beginning, I would recommend cloning the <a href="https://github.com/pop-os/cosmic-app-template">COSMIC App Template</a> to experiment with while reading the documentation below.</p>
 </blockquote>
 <h2 id="model"><a class="header" href="#model">Model</a></h2>
 <p>Every application begins with the application model. All application state will be stored in this model, and it will be wise to cache data that will be needed by your application's widgets. It is important that it contains at least a <a href="https://pop-os.github.io/libcosmic/cosmic/app/struct.Core.html">cosmic::app::Core</a>, which will provide a way of interacting with certain aspects of the COSMIC app runtime.</p>
